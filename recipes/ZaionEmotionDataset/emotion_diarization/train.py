@@ -297,11 +297,11 @@ if __name__ == "__main__":
                 "win_len": hparams["window_length"] * 0.02,
                 "stride": hparams["stride"] * 0.02,
                 "seed": hparams["seed"],
-                "emovdb_folder": hparams["emovdb_folder"],
+                # "emovdb_folder": hparams["emovdb_folder"],
                 "esd_folder": hparams["esd_folder"],
-                "iemocap_folder": hparams["iemocap_folder"],
-                "jlcorpus_folder": hparams["jlcorpus_folder"],
-                "ravdess_folder": hparams["ravdess_folder"],
+                # "iemocap_folder": hparams["iemocap_folder"],
+                # "jlcorpus_folder": hparams["jlcorpus_folder"],
+                # "ravdess_folder": hparams["ravdess_folder"],
             },
         )
         sb.utils.distributed.run_on_main(
