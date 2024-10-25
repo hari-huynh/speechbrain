@@ -13,11 +13,11 @@ import json
 import os
 import random
 
-from datasets.prepare_EMOVDB import prepare_emovdb
+# from datasets.prepare_EMOVDB import prepare_emovdb
 from datasets.prepare_ESD import prepare_esd
-from datasets.prepare_IEMOCAP import prepare_iemocap
-from datasets.prepare_JLCORPUS import prepare_jlcorpus
-from datasets.prepare_RAVDESS import prepare_ravdess
+# from datasets.prepare_IEMOCAP import prepare_iemocap
+# from datasets.prepare_JLCORPUS import prepare_jlcorpus
+# from datasets.prepare_RAVDESS import prepare_ravdess
 
 from speechbrain.utils.logger import get_logger
 
@@ -147,21 +147,21 @@ def prepare_train(
         return
 
     all_dict = {}
-    check_and_prepare_dataset(
-        emovdb_folder, "EMOV-DB", prepare_emovdb, all_dict, seed
-    )
+    # check_and_prepare_dataset(
+    #     emovdb_folder, "EMOV-DB", prepare_emovdb, all_dict, seed
+    # )
 
     check_and_prepare_dataset(esd_folder, "ESD", prepare_esd, all_dict, seed)
 
-    check_and_prepare_dataset(
-        iemocap_folder, "IEMOCAP", prepare_iemocap, all_dict, seed
-    )
-    check_and_prepare_dataset(
-        jlcorpus_folder, "JL_CORPUS", prepare_jlcorpus, all_dict, seed
-    )
-    check_and_prepare_dataset(
-        ravdess_folder, "RAVDESS", prepare_ravdess, all_dict, seed
-    )
+    # check_and_prepare_dataset(
+    #     iemocap_folder, "IEMOCAP", prepare_iemocap, all_dict, seed
+    # )
+    # check_and_prepare_dataset(
+    #     jlcorpus_folder, "JL_CORPUS", prepare_jlcorpus, all_dict, seed
+    # )
+    # check_and_prepare_dataset(
+    #     ravdess_folder, "RAVDESS", prepare_ravdess, all_dict, seed
+    # )
 
     bad_keys = []
     for key in all_dict.keys():
