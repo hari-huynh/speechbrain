@@ -17,11 +17,11 @@ wav2vec2_folder: !ref <save_folder>/wav2vec2_checkpoint
 # Data files
 zed_folder: !PLACEHOLDER # e,g./path/to/ZED
 
-emovdb_folder: !PLACEHOLDER # e,g./path/to/EmoV-DB
+# emovdb_folder: !PLACEHOLDER # e,g./path/to/EmoV-DB
 esd_folder: !PLACEHOLDER # e,g./path/to/ESD
-iemocap_folder: !PLACEHOLDER # e,g./path/to/IEMOCAP_full_release
-jlcorpus_folder: !PLACEHOLDER # e,g./path/to/JL_corpus
-ravdess_folder: !PLACEHOLDER # e,g./path/to/RAVDESS
+# iemocap_folder: !PLACEHOLDER # e,g./path/to/IEMOCAP_full_release
+# jlcorpus_folder: !PLACEHOLDER # e,g./path/to/JL_corpus
+# ravdess_folder: !PLACEHOLDER # e,g./path/to/RAVDESS
 
 split_ratio: [90, 10]
 skip_prep: False
